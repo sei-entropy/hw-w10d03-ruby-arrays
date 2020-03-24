@@ -165,3 +165,75 @@ end
 # {:name=>"Faisal", :coffee_average=>5.93}
 # {:name=>"Maimona", :coffee_average=>4.43}
 # {:name=>"Bedour", :coffee_average=>37.28666666666667}
+
+
+##---------------------------------------------------
+
+##   4. Find the most expensive product for each store, with the store name
+
+stores = [
+  {
+      store_name: 'Jarir',
+      products: [
+          {
+              description: 'Titanium',
+              price: 9384.33
+          },
+          {
+              description: 'Gold',
+              price: 345.54
+          }
+      ]
+  },
+  {
+      store_name: 'Tamimi',
+      products: [
+          {
+              description: 'Silver',
+              price: 654.44
+          },
+          {
+              description: 'Ruby',
+              price: 323.43
+          }
+      ]
+  },
+  {
+      store_name: 'Souq',
+      products: [
+          {
+              description: 'Opal',
+              price: 345.43
+          },
+          {
+              description: 'Sapphire',
+              price: 899.33
+          }
+      ]
+  }
+]
+
+most_expensive_products_by_store = []
+
+most_expensive_products_by_store = stores.map do |index|
+    expensive_product = 0
+    description = ""
+    name = index[:store_name]
+ 
+    index[:products].each do |product|
+        if expensive_product < product[:price]
+            expensive_product = product[:price]
+            description = product[:description]
+        end
+    end
+ 
+    " store name:#{name} , most expensive product:#{description} ,  price:#{expensive_product} "
+ 
+ end
+ 
+ puts most_expensive_products_by_store
+ 
+## Answer: 
+# {:store_name=>"Jarir", :most_expensive_product=>{:description=>"Titanium", :price=>9384.33}}
+# {:store_name=>"Tamimi", :most_expensive_product=>{:description=>"Silver", :price=>654.44}}
+# {:store_name=>"Souq", :most_expensive_product=>{:description=>"Sapphire", :price=>899.33}}
