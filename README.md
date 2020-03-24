@@ -25,6 +25,7 @@ upper_case_full_names = []
 
 ```
 
+
 ### Answer
 
 ```rb
@@ -214,6 +215,15 @@ most_expensive_products_by_store = []
 ```
 
 ### Answer
+
+
+
+
+
+
+
+
+
 
 ```rb
 
