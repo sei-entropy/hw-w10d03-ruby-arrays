@@ -83,3 +83,85 @@ end
 # {:description=>"bees"}
 # {:description=>"a MacBook"}
 
+
+
+##---------------------------------------------------
+
+##  3. Find the average amount spent on coffee, per transaction, for each person
+
+people = [
+  {
+    name: 'Mohammed',
+    transactions: [
+        {
+            type: 'COFFEE',
+            amount: 7.43
+        },
+        {
+            type: 'TACOS',
+            amount: 14.65
+        },
+        {
+            type: 'COFFEE',
+            amount: 4.43
+        }
+    ]
+},
+{
+    name: 'Maimona',
+    transactions: [
+        {
+            type: 'BIKES',
+            amount: 800.00
+        },
+        {
+            type: 'TACOS',
+            amount: 14.65
+        },
+        {
+            type: 'COFFEE',
+            amount: 4.43
+        }
+    ]
+},
+{
+    name: 'Bedour',
+    transactions: [
+        {
+            type: 'COFFEE',
+            amount: 7.43
+        },
+        {
+            type: 'COFFEE',
+            amount: 100.00
+        },
+        {
+            type: 'COFFEE',
+            amount: 4.43
+        }
+    ]
+}
+]
+
+coffee_average_per_person = []
+
+coffee_average_per_person = people.map do |person|
+    num_of_coffee = 0
+    sum = 0
+    person[:transactions].each do |num| 
+        if num[:type] == "COFFEE"
+            num_of_coffee += 1
+            sum += num[:amount]
+        end
+    end
+    average = sum / num_of_coffee
+ "name:#{person[:name]} average: #{average}"
+end
+
+# p coffee_average_per_person
+
+
+## Answer: 
+# {:name=>"Faisal", :coffee_average=>5.93}
+# {:name=>"Maimona", :coffee_average=>4.43}
+# {:name=>"Bedour", :coffee_average=>37.28666666666667}
