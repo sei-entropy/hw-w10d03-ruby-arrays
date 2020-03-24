@@ -17,8 +17,7 @@ upper_case_full_names = []
 
 upper = students.each do |value|
     up = "#{value[:first_name]} #{value[:last_name]}"
-    c= up.upcase
-    upper_case_full_names.push(c)
+   p c= up.upcase
 end
 
 
