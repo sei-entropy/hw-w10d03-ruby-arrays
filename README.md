@@ -8,16 +8,16 @@
 
 students = [
   {
-      first_name: 'Lamees',
-      last_name: 'AlFallaj'
+      first_name: 'Renad',
+      last_name: 'Alobaid'
   },
   {
-      first_name: 'Aisha',
-      last_name: 'AlDabbagh',
+      first_name: 'Roba',
+      last_name: 'Arishi',
   },
   {
-      first_name: 'Abdulwahhab',
-      last_name: 'AlBalla',
+      first_name: 'Lama',
+      last_name: 'Alaskar',
   }
 ]
 
@@ -28,9 +28,9 @@ upper_case_full_names = []
 ### Answer
 
 ```rb
-LAMEES ALFALLAJ
-AISHA ALDABBAGH
-ABDULWAHHAB ALBALLA
+RENAD ALOBAID
+ROBA ARISHI
+LAMA ALASKAR
 ```
 
 ## 2. Find the first order for each user
@@ -39,7 +39,7 @@ ABDULWAHHAB ALBALLA
 
 users = [
   {
-      name: 'Fahad',
+      name: 'Faisal',
       orders: [
           {
               description: 'a bike'
@@ -47,7 +47,7 @@ users = [
       ]
   },
   {
-      name: 'Abdulrahman',
+      name: 'Huda',
       orders: [
           {
               description: 'bees'
@@ -58,7 +58,7 @@ users = [
       ]
   },
   {
-      name: 'Muhannad',
+      name: 'Omar',
       orders: [
           {
               description: 'a MacBook'
@@ -96,7 +96,7 @@ first_order_for_each_user = []
 
 people = [
   {
-      name: 'Sarah',
+      name: 'Mohammed',
       transactions: [
           {
               type: 'COFFEE',
@@ -113,7 +113,7 @@ people = [
       ]
   },
   {
-      name: 'Saud',
+      name: 'Maimona',
       transactions: [
           {
               type: 'BIKES',
@@ -130,7 +130,7 @@ people = [
       ]
   },
   {
-      name: 'Norah',
+      name: 'Bedour',
       transactions: [
           {
               type: 'COFFEE',
@@ -157,9 +157,9 @@ coffee_average_per_person = []
 
 ```rb
 
-{:name=>"Sarah", :coffee_average=>5.93}
-{:name=>"Saud", :coffee_average=>4.43}
-{:name=>"Norah", :coffee_average=>37.28666666666667}
+{:name=>"Faisal", :coffee_average=>5.93}
+{:name=>"Maimona", :coffee_average=>4.43}
+{:name=>"Bedour", :coffee_average=>37.28666666666667}
 
 ```
 
@@ -232,11 +232,11 @@ Write an infinite loop that will make you add all the your friends in the studen
 ```
 
 add a student
-Mohammed AlOfaysan
+Mashael Alsaadan
 Do you want to continue ? (y/n)
 y
 add a student
-Raje AlHarthi
+Afnan Basudan
 Do you want to continue ? (y/n)
 y
 add a student
