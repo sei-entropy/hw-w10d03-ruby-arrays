@@ -179,11 +179,15 @@ stores = [
 most_expensive_products_by_store = []
 
 # p stores[0][:products]
- stores.map.with_index  do |prod, index|
+ stores.map  do |prod|
 #    puts prod[:products][index][:price]
-puts prod[:products][index][:price]
+if prod[:products][0][:price] > prod[:products][1][:price]
+most_expensive_products_by_store.push({store_name:prod[:store_name]}, {price:prod[:products][0][:price]},{description:prod[:products][0][:description]})
+elsif
+    most_expensive_products_by_store.push({store_name:prod[:store_name]}, {price:prod[:products][1][:price]},{description:prod[:products][1][:description]})
+end
 
  end
 
-
+p most_expensive_products_by_store
 
