@@ -231,9 +231,27 @@ most_expensive_products_by_store = stores.map do |index|
  
  end
  
- puts most_expensive_products_by_store
+#  puts most_expensive_products_by_store
  
 ## Answer: 
 # {:store_name=>"Jarir", :most_expensive_product=>{:description=>"Titanium", :price=>9384.33}}
 # {:store_name=>"Tamimi", :most_expensive_product=>{:description=>"Silver", :price=>654.44}}
 # {:store_name=>"Souq", :most_expensive_product=>{:description=>"Sapphire", :price=>899.33}}
+
+
+#Bonus
+students_list =[]
+while(true) 
+    p "add a student" 
+    add_student = gets
+    students_list.push(add_student)
+    p "Do you want to continue ? (y/n)" 
+    choose = gets.chomp.upcase
+    if choose == "N"
+        break
+    end
+end
+
+
+p "your friends are:" 
+puts students_list
